@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotosciocche in Vendita</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link al foglio di stile -->
+</head>
+<body>
+    <!-- Barra di navigazione -->
+    <header>
+        <h1>Fotosciocche in Vendita</h1>
+        <nav>
+            <ul>
+                <li><a href="#shop">Le Foto</a></li>
+                <li><a href="#contact">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sezione per i prodotti -->
+    <section id="shop">
+        <h2>Le Foto in Vendita</h2>
+
+        <!-- Prodotto 1: Immagine di tuo fratello -->
+        <div class="product">
+            <img src="foto1.jpeg" alt="Foto di fratello 1" />
+            <p>Foto Sciocca 1 - €5</p>
+            <button onclick="aggiungiAlCarrello('Foto Sciocca 1', 5)">Aggiungi al Carrello</button>
+        </div>
+
+        <!-- Prodotto 2: Immagine di tuo fratello -->
+        <div class="product">
+            <img src="foto2.jpeg" alt="Foto di fratello 2" />
+            <p>Foto Sciocca 2 - €5</p>
+            <button onclick="aggiungiAlCarrello('Foto Sciocca 2', 5)">Aggiungi al Carrello</button>
+        </div>
+
+        <!-- Prodotto 3: Immagine di tuo fratello -->
+        <div class="product">
+            <img src="foto3.jpeg" alt="Foto di fratello 3" />
+            <p>Foto Sciocca 3 - €5</p>
+            <button onclick="aggiungiAlCarrello('Foto Sciocca 3', 5)">Aggiungi al Carrello</button>
+        </div>
+
+    </section>
+
+    <!-- Sezione Carrello -->
+    <section id="cart">
+        <h2>Il Tuo Carrello</h2>
+        <ul id="cart-items"></ul>
+        <p id="total-price">Totale: €0</p>
+        <button onclick="acquista()">Acquista</button>
+    </section>
+
+    <!-- Sezione Contatti -->
+    <section id="contact">
+        <h2>Contattaci</h2>
+        <p>Per qualsiasi informazione, contattaci via email: <a href="mailto:info@fotosciocche.com">info@fotosciocche.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Fotosciocche in Vendita</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Link al file JavaScript -->
+</body>
+</html>
